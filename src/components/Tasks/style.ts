@@ -7,9 +7,10 @@ export const style = StyleSheet.create({
         padding:24,
     },
     card:{
-        padding:12,
+        paddingLeft:8,
         paddingTop: 20,
         paddingBottom: 20,
+        paddingRight: 8,
         alignItems: 'center',
         justifyContent:'space-between',
         flexDirection:'row',
@@ -25,6 +26,11 @@ export const style = StyleSheet.create({
 
 
     },
+    buttonRemove:{
+        width:30,
+        backgroundColor:'transparent',
+        
+    },
     textCard:{
         color:'#F2F2F2',
         fontSize:14,
@@ -35,17 +41,5 @@ export const style = StyleSheet.create({
         textDecorationLine:'line-through'
 
     },
-    emptyComponent:{
-        alignItems: 'center',
-    },
-    textEmpty:{
-        color: '#808080',
-        fontWeight: '700',
-        marginTop: 16,
-    },
-    textTaskEmpty:{
-        color: '#808080',
-
-
-    }
+   
 })

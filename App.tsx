@@ -1,9 +1,11 @@
-import { StatusBar } from 'react-native';
+import { FlatList, StatusBar } from 'react-native';
 import { StyleSheet, Text, View } from 'react-native';
 import { Header } from './src/components/Header';
 import { CreatedTask } from './src/components/CreatedTask';
 import { Tasks } from './src/components/Tasks';
-import { TaskContextProvider } from './src/contexts/TaskContext';
+import { TaskContext, TaskContextProvider } from './src/contexts/TaskContext';
+import { useContext } from 'react';
+import { EmptyComponent } from './src/components/EmptyComponent';
 
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
             <Header></Header>
             <CreatedTask/>
             <Tasks/>
+          
 
           </TaskContextProvider>
       
